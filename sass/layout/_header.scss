@@ -1,0 +1,114 @@
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+/* Site-nav */
+.site-nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.site-nav .link {
+  color: var(--primary-texr-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link,
+.current {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+
+.item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.nav,
+.nav-current {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.icon-envelope:hover,
+.icon-envelope:focus {
+  fill: var(--accent-color);
+}
+.icon-phone:hover,
+.icon-phone:focus {
+  fill: var(--accent-color);
+}
+.icon-envelope,
+.icon-phone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts {
+  list-style-type: none;
+  margin-left: auto;
+  display: flex;
+}
+.contacts-link {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-link-foot {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-link-foot:hover,
+.contacts-link-foot:focus {
+  color: var(--accent-color);
+}
+
+.contacts-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.contacts-link-foot {
+  display: block;
+}
