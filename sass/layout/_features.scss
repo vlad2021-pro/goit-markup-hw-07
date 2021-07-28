@@ -19,9 +19,9 @@
 }
 .advantages {
   margin-right: 30px;
-}
-.advantages:last-child {
-  margin-right: 0px;
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
 .advantages-icon {

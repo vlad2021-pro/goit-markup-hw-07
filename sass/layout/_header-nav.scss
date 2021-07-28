@@ -13,17 +13,18 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
 }
 .nav-portfolio {
   list-style-type: none;
   display: flex;
   align-items: center;
 }
-.nav-portfolio .nav:hover,
-.nav-portfolio .nav:focus {
-  color: var(--accent-color);
-  text-decoration: none;
-}
+
 .nav-portfolio .nav-current {
   color: var(--accent-color);
   text-decoration: none;

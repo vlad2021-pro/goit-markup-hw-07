@@ -9,6 +9,11 @@
   margin-left: 30px;
   margin-top: 30px;
   background-color: var(--white-color);
+  & {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
 }
 
 .section-team {
@@ -46,11 +51,11 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-link:hover,
-.social-link:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
 }
 
 .head {
@@ -70,9 +75,4 @@
   padding-bottom: 30px;
   padding-left: 32px;
   padding-right: 32px;
-}
-.masters-list {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }

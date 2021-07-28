@@ -15,30 +15,30 @@
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
+
 .button-current {
   padding: 6px 22px;
+  &:focus,
+  &:hover {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
 }
 .button-portfolio {
   display: flex;
   list-style-type: none;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.btm-portfolio:not(:last-child) {
-  margin-right: 8px;
-}
-.button-portfolio:focus,
-.button-current:hover,
-.button-current:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-.button-current:focus,
-.button-current:hover {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }

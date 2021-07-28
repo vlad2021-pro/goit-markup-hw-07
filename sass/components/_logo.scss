@@ -10,12 +10,12 @@
   padding-top: 24px;
   padding-bottom: 25px;
   display: block;
+  & :hover {
+    color: var(--accent-color);
+  }
 }
 
-.logo :hover {
-  color: var(--accent-color);
-}
-.logo-black {
+.logo__black {
   color: var(--black-color);
   font-family: Raleway;
   font-weight: 400;
